@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
 {
 
     private Rigidbody rb;
+    private float movementX;
+    private float movementY;
     // Start is called before the first frame update
     void Start()
     {
