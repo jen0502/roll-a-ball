@@ -25,5 +25,7 @@ void OnMove(InputValue movementValue)
 }
 void FixedUpdate()
 {
+    Vector3 movement = new Vector3(movementX, 0.0f, movementY);
+
     rb.AddForce(movementVector);
 }
