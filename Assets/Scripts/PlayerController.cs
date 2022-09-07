@@ -12,16 +12,16 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      rb = GetComponent<Rigidbody>();  
+        rb = GetComponent<Rigidbody>();
     }
 
-void OnMove(InputValue movementValue)
-{
-    Vector2 movementVector = movementValue.Get<Vector2>();
+    void OnMove(InputValue movementValue)
+    {
+        Vector2 movementVector = movementValue.Get<Vector2>();
 
-    movementX = movementVector.x;
-    movementY = movementVector.y;
-}
+        movementX = movementVector.x;
+        movementY = movementVector.y;
+    }
 }
 void FixedUpdate()
 {
