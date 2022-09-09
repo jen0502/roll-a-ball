@@ -28,6 +28,10 @@ public class PlayerController : MonoBehaviour
         movementY = movementVector.y;
     }
 
+void SetCountText()
+{
+    countText.text = "Count: " + count.ToString();
+}
     void FixedUpdate()
     {
         Vector3 movement = new Vector3(movementX, 0.0f, movementY);
