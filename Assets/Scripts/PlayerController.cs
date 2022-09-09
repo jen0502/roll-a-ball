@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
+        other.gameObject.SetActive(false);
     }
 
 }
